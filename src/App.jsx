@@ -159,8 +159,9 @@ useEffect(() => {
   catch(error){
     console.log(error);
   }
+}
 
-  const updateDomain = async () => {
+const updateDomain = async () => {
   if (!record || !domain) { return }
   setLoading(true);
   console.log("Updating domain", domain, "with record", record);
@@ -183,7 +184,6 @@ useEffect(() => {
       console.log(error);
     }
   setLoading(false);
-}
 }
 
   
